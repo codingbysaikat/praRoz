@@ -245,4 +245,6 @@ form input{
     text-decoration: none;
     color: #ff7200;
 }
-
+.icons ion-icon:hover{
+    color: #ff7200;
+}
