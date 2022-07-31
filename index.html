@@ -31,22 +31,28 @@
             </div>
         </div>
         <div class="content">
-            <h1> Web Design & <br>Development <br> Course</h1>
+            <h1> Web Design & <br><span>Development</span> <br> Course</h1>
             <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> beatae nisi asperiores esse
                 incidunt qui, dolores excepturi <br> repudiandae tenetur doloremque alias, dolor
              </p>
              <button class="cn"><a href="#">JOIN US</a></button>
              <div class="form">
                 <h2>Loign Here</h2>
-                <input type="email" name="email" placeholder="Enter email here">
-                <input type="password" name="" placeholder="Enter password here">
-                <button><a href="#">Login</a></button>
+                <form action="" method="post" id="">
+                    <input type="email" name="email" placeholder="Enter email here" required>
+                    <input type="password" name="" placeholder="Enter password here">
+                    <input type="submit"class="btnn" name="" value="Login">
+                </form>
                 <p class="link">Don't have an account<br>
-                <a href="#">Sign up </a> here</a></p>
+                <a href="#">Sign up</a> here</a></p>
                 <p class="liw">Login In with</p>
 
                 <div class="icons">
                     <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
 
                 </div>
 
@@ -56,6 +62,49 @@
     </div>
  
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script> 
+        /** 
+         * Disable right-click of mouse, F12 key, and save key combinations on page 
+         */ 
+         document.addEventListener("contextmenu", function(e){ 
+         e.preventDefault(); 
+         }, false); 
+         document.addEventListener("keydown", function(e) { 
+         //document.onkeydown = function(e) { 
+         // "I" key 
+         if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { 
+         disabledEvent(e); 
+         } 
+         // "J" key 
+         if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { 
+         disabledEvent(e); 
+         } 
+         // "S" key + macOS 
+         if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) { 
+         disabledEvent(e); 
+         } 
+         // "U" key 
+         if (e.ctrlKey && e.keyCode == 85) { 
+         disabledEvent(e); 
+         } 
+         // "F12" key 
+         if (event.keyCode == 123) { 
+         disabledEvent(e); 
+         } 
+         // "C" key 
+         if (e.ctrlKey && event.keyCode == 67) { 
+         disabledEvent(e); 
+         } 
+         }, false); 
+         function disabledEvent(e){ 
+         if (e.stopPropagation){ 
+         e.stopPropagation(); 
+         } else if (window.event){ 
+         window.event.cancelBubble = true; 
+         } 
+         e.preventDefault(); 
+         return false; 
+         }</script> 
 </body>
 
 </html>
